@@ -41,7 +41,6 @@
 │   ├── run_batch.py           # 批量处理脚本
 │   ├── output/                # 输出目录
 │   └── requirements.txt       # 依赖包
-├── .env                        # 环境变量配置（不提交）
 ├── .env.example               # 环境变量示例
 ├── .gitignore                 # Git忽略文件
 └── README.md                  # 项目说明文档
@@ -92,7 +91,7 @@ cp .env.example .env
 
 # 编辑.env文件，填入你的API配置
 # DEEPSEEK_API_KEY=your_api_key_here
-# DEEPSEEK_API_URL=https://llmapi.inner.sincetech.com/v1
+# DEEPSEEK_API_URL=your_api_Url_here
 # DEEPSEEK_MODEL=DeepSeek-V4-Flash
 ```
 
@@ -139,10 +138,10 @@ python qa_system/test_all_types.py
 
 示例：
 ```csv
-qid,answer,prompt_tokens,completion_tokens,total_tokens
-fc_a_001,ABD,12648,300,12948
-fc_a_002,ABD,12642,300,12942
-fc_a_003,A,12597,174,12771
+qid | answer | prompt_tokens | completion_tokens | total_tokens
+fc_a_001 | ABD | 12648 | 300 | 12948
+fc_a_002 | ABD | 12642 | 300 | 12942
+fc_a_003 | A | 12597 | 174 | 12771
 ```
 
 ## 配置说明
@@ -152,7 +151,7 @@ fc_a_003,A,12597,174,12771
 | 变量名 | 说明 | 默认值 |
 |--------|------|--------|
 | DEEPSEEK_API_KEY | DeepSeek API密钥 | - |
-| DEEPSEEK_API_URL | API地址 | https://llmapi.inner.sincetech.com/v1 |
+| DEEPSEEK_API_URL | API地址 | - |
 | DEEPSEEK_MODEL | 模型名称 | DeepSeek-V4-Flash |
 
 ### 系统参数
