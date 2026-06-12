@@ -137,12 +137,11 @@ python qa_system/test_all_types.py
 | total_tokens | 总token数 |
 
 示例：
-```csv
-qid | answer | prompt_tokens | completion_tokens | total_tokens
-fc_a_001 | ABD | 12648 | 300 | 12948
-fc_a_002 | ABD | 12642 | 300 | 12942
-fc_a_003 | A | 12597 | 174 | 12771
-```
+| qid | answer | prompt_tokens | completion_tokens | total_tokens |
+| fc_a_001 | ABD | 12648 | 300 | 12948 |
+| fc_a_002 | ABD | 12642 | 300 | 12942 |
+| fc_a_003 | A | 12597 | 174 | 12771 |
+
 
 ## 配置说明
 
